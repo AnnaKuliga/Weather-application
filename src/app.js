@@ -60,9 +60,9 @@ showFullTime();
 
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector("#current-temp").innerHTML = Math.round(
+  document.querySelector("#current-temp").innerHTML = `${Math.round(
     response.data.main.temp
-  );
+  )}°C`;
 
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;

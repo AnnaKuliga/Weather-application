@@ -27,11 +27,6 @@
   <body>
     <div class="container">
       <div class="main-body">
-        <button id="gps">
-          <i class="fa-solid fa-location-dot"></i>
-        </button>
-        <button id="unitBtn" data-units="f">°F</button>
-        <button id="unitBtn" data-units="c">°C</button>
         <section class="search-bar">
           <form id="search-city-bar">
             <input
@@ -43,20 +38,24 @@
               id="search-text-input"
             />
             <input type="submit" value="Search" class="btn btn-primary" />
+            <input
+              type="submit"
+              value="GPS location"
+              class="btn btn-success"
+              id="gps"
+            />
           </form>
         </section>
-
         <section class="city-temp">
-          <h1>Lublin, Pl</h1>
+          <h1>Lublin,Pl</h1>
           <div class="main-icon">
             <i class="fa-solid fa-cloud-sun main-icon"> </i>
           </div>
           <div class="main-temp">
-            <span id="current-temp">12</span>°
+            <span id="current-temp"></span>°
             <span class="temp-unit"
-              ><a id="celcius" href="#">C</a> |
-              <a id="fahrenheit" href="#">F</a></span
-            >
+              ><a id="celcius" href="#"></a> | <a id="fahrenheit" href="#"></a
+            ></span>
           </div>
           <div class="weatherConditions">
             <span id="main-description"></span> <br />
@@ -100,16 +99,6 @@
             </div>
           </div>
         </secion>
-      </div>
-      <div>
-        <a
-          href="https://github.com/AnnaKuliga/Weather-application"
-          class="gitLink"
-          target="_blank"
-        >
-          Open-source code</a
-        >
-        by Anna Kuliga
       </div>
     </div>
     <script src="src/app.js"></script>
