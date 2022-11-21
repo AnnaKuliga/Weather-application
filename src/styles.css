@@ -63,6 +63,10 @@ a:hover {
   background: rgba(248, 235, 235, 0.712);
   border: 0;
 }
+.gitlink {
+  display: block;
+  margin: 80px 30px 20px 30px;
+}
 
 .main-body {
   box-shadow: 2px 2px 15px;
