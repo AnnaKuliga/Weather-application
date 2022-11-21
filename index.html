@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>🌎 Weather App 🌎</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/27f486756b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-body">
+        <section class="search-bar">
+          <form id="search-city-bar">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for the city"
+              autocomplete="off"
+              autofocus="on"
+              id="search-text-input"
+            />
+            <input type="submit" value="Search" class="btn btn-primary" />
+            <input
+              type="submit"
+              value="GPS location"
+              class="btn btn-success"
+              id="gps"
+            />
+          </form>
+        </section>
+        <section class="city-temp">
+          <h1>Lublin, Pl</h1>
+          <div class="main-icon">
+            <i class="fa-solid fa-cloud-sun main-icon"> </i>
+          </div>
+          <div class="main-temp">
+            <span id="current-temp">12</span>°
+            <span class="temp-unit"
+              ><a id="celcius" href="#">C</a> |
+              <a id="fahrenheit" href="#">F</a></span
+            >
+          </div>
+          <div class="weatherConditions">
+            <span id="main-description"></span> <br />
+            <span id="humidity"></span> <br />
+            <span id="wind"></span>
+          </div>
+        </section>
+
+        <section class="time-date" id="show-time">
+          <div class="clock">17:51</div>
+          <div class="weekday">Sunday</div>
+          <div class="calendar">October 09, 2022</div>
+        </section>
+
+        <secion class="following-days">
+          <div class="row">
+            <div class="col">
+              Monday <br />
+              16℃<br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="col">
+              Tuesday <br />
+              16℃<br />
+              <i class="fa-solid fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="col">
+              Wednesday <br />
+              13℃<br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="col">
+              Thursday <br />
+              13℃<br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="col">
+              Friday<br />
+              14℃<br />
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+          </div>
+        </secion>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
