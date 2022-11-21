@@ -27,6 +27,11 @@
   <body>
     <div class="container">
       <div class="main-body">
+        <button id="gps">
+          <i class="fa-solid fa-location-dot"></i>
+        </button>
+        <button id="unitBtn" data-units="f">°F</button>
+        <button id="unitBtn" data-units="c">°C</button>
         <section class="search-bar">
           <form id="search-city-bar">
             <input
@@ -38,14 +43,9 @@
               id="search-text-input"
             />
             <input type="submit" value="Search" class="btn btn-primary" />
-            <input
-              type="submit"
-              value="GPS location"
-              class="btn btn-success"
-              id="gps"
-            />
           </form>
         </section>
+
         <section class="city-temp">
           <h1>Lublin, Pl</h1>
           <div class="main-icon">
