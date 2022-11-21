@@ -63,16 +63,13 @@ a:hover {
   background: rgba(248, 235, 235, 0.712);
   border: 0;
 }
-.gitlink {
-  display: block;
-  margin: 80px 30px 20px 30px;
-}
 
 .main-body {
   box-shadow: 2px 2px 15px;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/743/original/Lublin.jpeg?1665851853);
-  display: block;
-  margin: 80px 30px 20px 30px;
+
+  width: 95%;
+  margin-top: 20px;
   padding: 40px;
   border-radius: 20px;
 }
