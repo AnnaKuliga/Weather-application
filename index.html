@@ -26,6 +26,7 @@
   </head>
   <body>
     <div class="container">
+
       <div class="main-body">
         <section class="search-bar">
           <form id="search-city-bar">
@@ -47,15 +48,16 @@
           </form>
         </section>
         <section class="city-temp">
-          <h1>Lublin,Pl</h1>
+          <h1>Lublin, Pl</h1>
           <div class="main-icon">
             <i class="fa-solid fa-cloud-sun main-icon"> </i>
           </div>
           <div class="main-temp">
-            <span id="current-temp"></span>°
+            <span id="current-temp">12</span>
             <span class="temp-unit"
-              ><a id="celcius" href="#"></a> | <a id="fahrenheit" href="#"></a
-            ></span>
+              ><a id="celcius" href="#"></a> |
+              <a id="fahrenheit" href="#">F</a></span
+            >
           </div>
           <div class="weatherConditions">
             <span id="main-description"></span> <br />
@@ -99,8 +101,9 @@
             </div>
           </div>
         </secion>
+       
       </div>
-    </div>
+      <div> <a href="https://github.com/AnnaKuliga/Weather-application" class="gitLink" target="_blank">Open-source code</a> by Anna Kuliga</div>
     <script src="src/app.js"></script>
   </body>
 </html>
